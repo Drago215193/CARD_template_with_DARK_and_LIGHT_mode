@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* Light Mode styles */
+* {
+  font-family: 'Righteous', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  background: #E0E0E0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content img {
+  position: relative;
+  right: 5px;
+  padding-bottom: 10px;
+  width: 270px;
+  pointer-events: none;
+}
+
+.container .card .box .content h3 {
+  font-size: 1.8em;
+  margin-bottom: -40px;
+  color: #000000;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.container .card .box .content p {
+  font-size: 1em;
+  color: #000000;
+  z-index: 1;
+  transition: 0.5s;
+  margin-top: 20%;
+}
+
+.fas {
+  position: relative;
+  top: 15px;
+  color: black;
+}
+
+.container .card:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+
+.container .card:hover .box .content h3, .container .card:hover .box .content p, .container .card:hover .box .content .fas {
+  color: black;
+}
+
+/* class 8th */
+.h3_8 {
+  color: black;
+  width: 55%;
+  border-radius: 5px;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  margin-left: 25%;
+}
+
+.h3_8_c {
+  background: -webkit-linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .card8:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  background-color: #4158d0;
+  background-image: linear-gradient(to right, #5433ff, #20bdff);
+}
+
+.container .card8:hover .box .h3_8_c {
+  background: -webkit-linear-gradient(black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .card8 .box .fas {
+  background: -webkit-linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .card8:hover .box .fas {
+  background: -webkit-linear-gradient(black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* class 9th */
+.h3_9 {
+  color: black;
+  width: 55%;
+  border-radius: 5px;
+  background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+  margin-left: 25%;
+}
+
+.container .card9 .box .fas {
+  background: -webkit-linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .card9:hover .box .fas {
+  background: -webkit-linear-gradient(black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h3_9_c {
+  background: -webkit-linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .card9:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  background-color: #4158d0;
+  background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+}
+
+.container .card9:hover .box .h3_9_c {
+  background: -webkit-linear-gradient(black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* class 10th */
+.h3_10 {
+  color: black;
+  width: 55%;
+  border-radius: 5px;
+  margin-left: 25%;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.container .card10 .box .fas {
+  background: -webkit-linear-gradient(315deg, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .card10:hover .box .fas {
+  background: -webkit-linear-gradient(black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h3_10_c {
+  background: -webkit-linear-gradient(315deg, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .card10:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  background-color: #4158d0;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.container .card10:hover .box .h3_10_c {
+  background: -webkit-linear-gradient(black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Dark Mode styles */
+body.dark-theme {
+  background: #232427;
+}
+
+body.dark-theme .card {
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .card .box {
+  background: #2a2b2f;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .card .box .content h3 {
+  color: rgba(250, 250, 250, 0.9);
+}
+
+body.dark-theme .fas {
+  color: rgba(200, 200, 200, 0.9);
+}
+
+body.dark-theme .card .box .content p {
+  color: rgba(200, 200, 200, 0.9);
+}
+
+body.dark-theme .card .box .content a {
+  background: #000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .container .card:nth-child(1) .box .content a {
+  background: transparent;
+}
+
+body.dark-theme .container .card:nth-child(2) .box .content a {
+  background: transparent;
+}
+
+body.dark-theme .container .card:nth-child(3) .box .content a {
+  background: transparent;
+}
+
+body.dark-theme .h3_8_c {
+  background: -webkit-linear-gradient(rgba(250, 250, 250, 0.9), rgba(250, 250, 250, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark-theme .h3_9_c {
+  background: -webkit-linear-gradient(rgba(250, 250, 250, 0.9), rgba(250, 250, 250, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark-theme .h3_10_c {
+  background: -webkit-linear-gradient(rgba(250, 250, 250, 0.9), rgba(250, 250, 250, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Checkbox Button*/
+.center {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.center input[type="checkbox"] {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  -webkit-appearance: none;
+  background: #111;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 0 0 2px #1f1f1f, inset -2px -2px 5px rgba(255, 255, 255, .1), inset 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: 0.5s;
+}
+
+.center input:checked[type="checkbox"] {
+  background: #00c9ff;
+  box-shadow: 0 0 0 2px #1f1f1f, 0 10px 20px rgba(0, 0, 0, .5), inset 0 0 5px rgba(0, 0, 0, 1), inset 0 0 15px rgba(0, 0, 0, .5);
+}
+
+.center input[type="checkbox"]:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 30px;
+  background: linear-gradient(to top, #000, #6b6b6b);
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #232323;
+  transform: scale(0.98, 0.96);
+  transition: 0.5s;
+}
+
+.center input:checked[type="checkbox"]:before {
+  left: 20px;
+}
+
+.center input[type="checkbox"]:after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 45px;
+  width: 4px;
+  height: 4px;
+  background: #f00;
+  box-shadow: 0 0 5px #f00, 0 0 15px #f00, 0 0 30px #f00;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.center input:checked[type="checkbox"]:after {
+  background: #00c9ff;
+  left: 65px;
+  box-shadow: 0 0 3px #00c9ff, 0 0 9px #00c9ff, 0 0 27px #00c9ff;
+}
